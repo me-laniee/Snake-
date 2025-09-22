@@ -45,7 +45,6 @@ public class ResultsView extends JFrame {
         // Botón para ver por niveles
         JButton btnNivel1 = new JButton("Nivel 1");
         JButton btnNivel2 = new JButton("Nivel 2");
-        // ... más botones ...
         
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(btnNivel1);

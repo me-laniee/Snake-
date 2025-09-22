@@ -2,22 +2,18 @@ package modules;
 
 import java.awt.Color;
 
-/**
- * Representa un nivel del juego con todas sus características
- * Cada nivel tiene diferente dificultad, velocidad y tema visual
- */
 public class Level {
-    private String name;        // Nombre descriptivo del nivel
-    private int speed;          // Velocidad en milisegundos (menos = más rápido)
-    private int difficulty;     // Nivel de dificultad (1-5 estrellas)
-    private Color color;        // Color principal del tema
+    private String name;
+    private int speed;
+    private int difficulty;
+    private Color color;
     
     /**
      * Constructor completo para crear un nivel
-     * @param name Nombre del nivel
-     * @param speed Velocidad en milisegundos
-     * @param difficulty Nivel de dificultad (1-5)
-     * @param color Color temático
+     * @param name
+     * @param speed
+     * @param difficulty
+     * @param color
 
      */
     public Level(String name, int speed, int difficulty, Color color, String emoji) {
@@ -29,7 +25,7 @@ public class Level {
     
     // GETTERS - Métodos para acceder a las propiedades del nivel
     
-    /** @return Nombre del nivel (ej: "Jardín", "Desierto") */
+    /** @return Nombre del nivel*/
     public String getName() { return name; }
     
     /** @return Velocidad en ms (intervalo entre movimientos) */

@@ -22,7 +22,7 @@ public class LevelsView extends JFrame {
     
     private void initialize() {
         setTitle("Snake Game - Seleccionar Nivel");
-        setSize(600, 500);
+        setSize(800, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setResizable(false);
@@ -32,13 +32,13 @@ public class LevelsView extends JFrame {
         
         // Título
         JLabel titleLabel = new JLabel("Selecciona un Nivel", SwingConstants.CENTER);
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 36));
-        titleLabel.setForeground(new Color(0, 102, 204));
+        titleLabel.setFont(new Font("Arial", Font.BOLD, 40));
+        titleLabel.setForeground(new Color(0, 86, 63)); // Verde Esmeralda Oscuro
         mainPanel.add(titleLabel, BorderLayout.NORTH);
         
         // Panel de niveles
         JPanel levelsPanel = new JPanel(new GridLayout(3, 1, 10, 10));
-        levelsPanel.setBackground(Color.WHITE);
+        levelsPanel.setBackground(new Color(192, 223, 192)); // Verde Menta Suave
         levelsPanel.setBorder(BorderFactory.createEmptyBorder(20, 50, 20, 50));
         
         // Botones de niveles
@@ -69,7 +69,7 @@ public class LevelsView extends JFrame {
         mainPanel.add(levelsPanel, BorderLayout.CENTER);
         
         // Botón de volver
-        CustomButton backButton = new CustomButton("Volver al Login");
+        CustomButton backButton = new CustomButton("Volver al inicio");
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -78,7 +78,7 @@ public class LevelsView extends JFrame {
         });
         
         JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        bottomPanel.setBackground(Color.WHITE);
+        bottomPanel.setBackground(Color.GRAY);
         bottomPanel.add(backButton);
         mainPanel.add(bottomPanel, BorderLayout.SOUTH);
         

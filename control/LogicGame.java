@@ -32,8 +32,8 @@ public class LogicGame implements ActionListener, KeyListener {
     private long tiempoInicio;
     private Duration tiempoTranscurrido;
     
-    public LogicGame(LevelControl levelControl, ScoreControl scoreControl, 
-                    UserControl userControl, Player player, int level) {
+    public LogicGame(LevelControl levelControl, ScoreControl scoreControl,
+        UserControl userControl, Player player, int level) {
         this.currentPlayer = player;
         this.currentLevel = level;
         this.scoreControl = scoreControl;
@@ -145,8 +145,8 @@ public class LogicGame implements ActionListener, KeyListener {
         // Guardar score con el tiempo
         scoreControl.updateScore(currentPlayer, score, currentLevel, tiempoTranscurrido);
         
-        JOptionPane.showMessageDialog(null, 
-            "Game Over!\nPuntuación: " + score + 
+        JOptionPane.showMessageDialog(null,
+            "Game Over!\nPuntuación: " + score +
             "\nTiempo: " + formatTiempo(tiempoTranscurrido));
     }
     
@@ -243,8 +243,8 @@ public class LogicGame implements ActionListener, KeyListener {
         }
     }
     
-    public void setLevelLabel(JLabel levelLabel) { 
-        this.levelLabel = levelLabel; 
+    public void setLevelLabel(JLabel levelLabel) {
+        this.levelLabel = levelLabel;
         if (levelLabel != null) {
             levelLabel.setText("Nivel: " + currentLevel);
         }
