@@ -16,7 +16,7 @@ public class ResultsView extends JFrame {
     
     private void initialize() {
         setTitle("Tabla de Puntuaciones");
-        setSize(600, 400);
+        setSize(700, 500);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         
