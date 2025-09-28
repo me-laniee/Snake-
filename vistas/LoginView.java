@@ -33,7 +33,7 @@ public class LoginView extends JFrame {
                 Graphics2D g2d = (Graphics2D) g;
                 
                 // Fondo con degradado verde
-                GradientPaint gradient = new GradientPaint(0, 0, new Color(23, 107, 16), 
+                GradientPaint gradient = new GradientPaint(0, 0, new Color(23, 107, 16),
                 getWidth(), getHeight(), new Color(11, 54, 7));
                 g2d.setPaint(gradient);
                 g2d.fillRect(0, 0, getWidth(), getHeight());

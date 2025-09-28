@@ -33,12 +33,12 @@ public class LevelsView extends JFrame {
         // Título
         JLabel titleLabel = new JLabel("Selecciona un Nivel", SwingConstants.CENTER);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 40));
-        titleLabel.setForeground(new Color(0, 86, 63)); // Verde Esmeralda Oscuro
+        titleLabel.setForeground(new Color(0, 86, 63));
         mainPanel.add(titleLabel, BorderLayout.NORTH);
         
         // Panel de niveles
         JPanel levelsPanel = new JPanel(new GridLayout(3, 1, 10, 10));
-        levelsPanel.setBackground(new Color(192, 223, 192)); // Verde Menta Suave
+        levelsPanel.setBackground(new Color(192, 223, 192));
         levelsPanel.setBorder(BorderFactory.createEmptyBorder(20, 50, 20, 50));
         
         // Botones de niveles
@@ -48,11 +48,11 @@ public class LevelsView extends JFrame {
             levelButton.setFont(new Font("Arial", Font.BOLD, 18));
             
             if (i == 1) {
-                levelButton.setBackground(new Color(76, 175, 80)); // Verde
+                levelButton.setBackground(new Color(76, 175, 80));
             } else if (i == 2) {
-                levelButton.setBackground(new Color(255, 152, 0)); // Naranja
+                levelButton.setBackground(new Color(255, 152, 0));
             } else {
-                levelButton.setBackground(new Color(244, 67, 54)); // Rojo
+                levelButton.setBackground(new Color(244, 67, 54));
             }
             
             final int levelNumber = i;
@@ -71,7 +71,6 @@ public class LevelsView extends JFrame {
         // Botón de volver
         CustomButton backButton = new CustomButton("Volver al inicio");
         backButton.addActionListener(new ActionListener() {
-            @Override
             public void actionPerformed(ActionEvent e) {
                 returnToLogin();
             }
